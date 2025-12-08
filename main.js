@@ -5,11 +5,68 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all features
     initNavigation();
+    initDrawer();
     initScrollAnimations();
     initCounterAnimation();
     initFormValidation();
     initSmoothScroll();
 });
+
+// ===================================
+// DRAWER FUNCTIONALITY
+// ===================================
+
+function initDrawer() {
+    const navToggler = document.querySelector('.navbar-toggler');
+    const drawer = document.getElementById('mobileDrawer');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+    const drawerCloseBtn = document.querySelector('.drawer-close');
+    
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'drawer-overlay';
+    document.body.appendChild(overlay);
+    
+    // Open drawer on hamburger click
+    if (navToggler) {
+        navToggler.addEventListener('click', function(e) {
+            e.stopPropagation();
+            drawer.classList.add('show');
+            overlay.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+    
+    // Close drawer functions
+    function closeDrawerMenu() {
+        drawer.classList.remove('show');
+        overlay.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Make closeDrawer available globally
+    window.closeDrawer = closeDrawerMenu;
+    
+    // Close on X button click
+    if (drawerCloseBtn) {
+        drawerCloseBtn.addEventListener('click', closeDrawerMenu);
+    }
+    
+    // Close on link click
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', closeDrawerMenu);
+    });
+    
+    // Close on overlay click
+    overlay.addEventListener('click', closeDrawerMenu);
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && drawer.classList.contains('show')) {
+            closeDrawerMenu();
+        }
+    });
+}
 
 // ===================================
 // NAVIGATION
@@ -29,19 +86,6 @@ function initNavigation() {
             link.classList.remove('active');
         }
     });
-
-    // Close mobile menu when link is clicked
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    if (navbarCollapse) {
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                    toggle: false
-                });
-                bsCollapse.hide();
-            });
-        });
-    }
 }
 
 // ===================================

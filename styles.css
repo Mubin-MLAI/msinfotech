@@ -85,13 +85,15 @@ a {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 1001;
-    background: rgba(0, 0, 0, 0.4);
+    background: #0f172a;
     color: #06b6d4;
     padding: 0.5rem 0;
     font-size: 0.875rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .topbar-contact span {
@@ -113,18 +115,170 @@ a {
 }
 
 /* ===================================
-   NAVBAR
+   NAVBAR & MOBILE DRAWER
    =================================== */
 .navbar {
     position: fixed;
-    top: 40px;
+    top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Drawer Styles */
+.navbar-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    background: #0f172a;
+    z-index: 999;
+    transition: left 0.3s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.navbar-drawer.show {
+    left: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.drawer-logo {
+    height: 40px;
+    width: auto;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    color: #06b6d4;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.drawer-close:hover {
+    background: rgba(6, 182, 212, 0.1);
+    color: #06d6ff;
+}
+
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem 0;
+}
+
+.drawer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.drawer-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.drawer-link {
+    display: block;
+    color: #d1d5db;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.drawer-link:hover {
+    color: #06b6d4;
+    background: rgba(6, 182, 212, 0.05);
+}
+
+.drawer-contact {
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: #06b6d4;
+}
+
+.btn-drawer {
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Backdrop overlay for drawer */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.drawer-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Show drawer only on mobile */
+@media (max-width: 768px) {
+    .navbar-drawer {
+        display: flex;
+    }
+    
+    .navbar-toggler {
+        margin-right: 0;
+    }
 }
 
 .logo-img {
@@ -1114,11 +1268,34 @@ textarea.form-control.is-invalid:focus {
    RESPONSIVE DESIGN
    =================================== */
 
+/* Desktop View - Show Topbar */
+@media (min-width: 769px) {
+    .topbar {
+        display: block;
+    }
+
+    .navbar {
+        top: 40px;
+    }
+
+    html, body {
+        padding-top: 110px;
+    }
+}
+
 /* Tablet & Medium Devices (768px and below) */
 @media (max-width: 768px) {
     html, body {
         font-size: 16px;
-        padding-top: 120px;
+        padding-top: 70px;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    .navbar {
+        top: 0;
     }
 
     h1 {
@@ -1907,4 +2084,143 @@ textarea.form-control.is-invalid:focus {
     0% { opacity: 0.4; text-shadow: 0 0 4px #00c6ff; }
     100% { opacity: 1; text-shadow: 0 0 14px #00c6ff; }
 }
+
+
+/* ===================================
+   RESPONSIVE BREAKPOINTS
+   =================================== */
+
+/*  Large Screens (Desktops < 1400px) */
+@media (max-width: 1399px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .cta-title {
+        font-size: 2.2rem;
+    }
+}
+
+/*  Medium Screens (Tablets < 992px) */
+@media (max-width: 991px) {
+
+    body {
+        padding-top: 150px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0.75rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .logo-img {
+        height: 42px;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .cta-section {
+        margin: 3rem 1rem;
+        padding: 2rem 1rem;
+    }
+}
+
+/*  Mobile Screens < 768px */
+@media (max-width: 767px) {
+
+    .topbar {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .hero-section {
+        min-height: 70vh;
+        padding: 3rem 0 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section {
+        padding: 3rem 0 2rem;
+        text-align: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links li a {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Extra Small Phones < 576px */
+@media (max-width: 575px) {
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+
+    .whatsapp-button {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 55px;
+        height: 55px;
+        font-size: 1.45rem;
+    }
+}
+
 
