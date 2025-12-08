@@ -268,6 +268,7 @@
             padding: 80px 0;
         }
 
+
         .hero-background {
             position: absolute;
             top: 0;
@@ -714,6 +715,18 @@
             color: white;
         }
 
+        .hero-bg-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            filter: blur(3px) brightness(0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .hero-title {
@@ -880,7 +893,7 @@
             <div class="glow-orb glow-cyan top-start"></div>
             <div class="glow-orb glow-purple bottom-end"></div>
         </div>
-        <img src="img/neon_bg.png" alt="MS Infotech" class="hero-background" style="max-height: 750px; width: auto; filter: blur(3px) brightness(0.6);">
+        <img src="img/neon_bg.png" alt="MS Infotech" class="hero-bg-img img-fluid h-100 w-100">
         <div class="container-fluid hero-content">
             
             <div class="text-center">
@@ -895,9 +908,9 @@
                 </h1>
 
                 <b>
-                <p class="hero-subtitle mb-5"> 
-                    Welcome to the future of software.<br><br>
-                    At M.S Infotech, we build intelligent Digital platforms that help your business work smarter, faster, and more efficiently.
+                <p class="hero-subtitle text-light mb-5">
+                    Welcome to M.S Infotech!<br><br>
+                    Your success is our priority. Let’s transform your operations with secure, reliable, and scalable digital innovation.
                 </p>
                 </b>
 
