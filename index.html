@@ -55,10 +55,10 @@
 
     /* Navbar Styles */
     .navbar {
-        background: rgba(26, 26, 26, 0.95);
+        /* background: rgba(26, 26, 26, 0.95); */
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(0, 212, 255, 0.1);
-        padding: 15px 0;
+        /* padding: 15px 0; */
     }
 
     .navbar-brand {
@@ -103,7 +103,7 @@
         right: -100%;
         width: 300px;
         height: 100vh;
-        background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+        /* background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); */
         z-index: 9999;
         transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
@@ -744,13 +744,12 @@
         width: 570px;
         aspect-ratio: 1;
         border-radius: 50%;
-        background-image: url('https://i.postimg.cc/9QCCCVsQ/earth.png');
+        background-image: url('img/earth.png');
         background-repeat: repeat-x;
         background-size: cover;
         animation: earth 40s linear infinite, pulse 2s linear infinite alternate-reverse;
         box-shadow: 0 -1px 1px 1px white,
         -1px 1px 1px 1px #64BEC8, 
-        0 0 var(--pulse) -20px #64BEC8, 
         inset 0 0 76px -10px #64BEC8,
         inset 0 0 var(--pulse2) -10px #64BEC8;
     }
