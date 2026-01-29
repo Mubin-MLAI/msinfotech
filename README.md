@@ -153,7 +153,7 @@ Edit the CSS variables at the top of `styles.css`:
 
 ### Update Company Information
 Update these contact details across all files:
-- Email: `mubinshaikh2013@gmail.com`
+- Email: `info@technosoftware.in`
 - Phone: `+91 8169196873`
 - Address: `403/4, SEC -12E, Koparkhairane, Maharashtra, Navi Mumbai - 400709`
 
@@ -237,7 +237,7 @@ Use these tools:
 ## 🤝 Support
 
 For support or questions about implementation:
-- Email: mubinshaikh2013@gmail.com
+- Email: info@technosoftware.in
 - Phone: +91 8169196873
 - WhatsApp: Use the button on the website
 

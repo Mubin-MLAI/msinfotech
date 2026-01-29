@@ -217,7 +217,7 @@ function handleContactFormSubmit(event) {
     const subject = `New Project Inquiry: ${projectName}`;
     const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AProject Name: ${projectName}%0D%0A%0D%0AMessage:%0D%0A${message}`;
     
-    window.location.href = `mailto:mubinshaikh2013@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = `mailto:info@technosoftware.in?subject=${encodeURIComponent(subject)}&body=${body}`;
 
     showAlert('Opening Email Client... Please send the pre-filled email to submit your inquiry.', 'success');
     form.reset();
