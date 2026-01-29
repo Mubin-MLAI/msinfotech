@@ -434,6 +434,6 @@ initLazyLoading();
 // ===================================
 // CONSOLE MESSAGE
 // ===================================
-console.log('%cM.S Infotech', 'font-size: 24px; font-weight: bold; color: #06b6d4;');
+console.log('%cTechnoSoftware', 'font-size: 24px; font-weight: bold; color: #06b6d4;');
 console.log('%cNext-Gen IT Solutions', 'font-size: 14px; color: #a855f7;');
 console.log('%cWebsite built with HTML, CSS, and JavaScript', 'font-size: 12px; color: #9ca3af;');

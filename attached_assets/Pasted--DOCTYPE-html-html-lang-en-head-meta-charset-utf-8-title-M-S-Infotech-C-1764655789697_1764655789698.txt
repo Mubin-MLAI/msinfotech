@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>M.S Infotech - Creative Design Solutions</title>
+    <title>TechnoSoftware - Creative Design Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="graphic design, web development, app development, digital marketing" name="keywords">
     <meta
-        content="M.S Infotech transforms ideas into innovative designs that speak to your audience. We combine creativity with strategy to deliver visually compelling solutions."
+        content="TechnoSoftware transforms ideas into innovative designs that speak to your audience. We combine creativity with strategy to deliver visually compelling solutions."
         name="description">
 
     <!-- Google Web Fonts -->
@@ -59,7 +59,7 @@
                                 class="fas fa-map-marker-alt me-2 text-secondary"></i></a>1542/2,Charpool
                         Street,Khamblawad,Navsari - 396445</small><br>
                     <small class="me-3 text-white-50"><a href="#"><i
-                                class="fas fa-envelope me-2 text-secondary"></i></a>info@M.S Infotech.com</small>
+                                class="fas fa-envelope me-2 text-secondary"></i></a>info@TechnoSoftware.com</small>
                 </div>
                 <div id="note" class="text-secondary d-none d-xl-flex"><small><b>Note : We help you to Grow your
                             Business</b></small></div>
@@ -82,7 +82,7 @@
         <div class="container">
             <nav class="navbar navbar-dark bg-darkblue navbar-expand-lg py-0">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="img/website_logo.png" alt="MS Infotech Logo" class="navbar-logo">
+                    <img src="img/Techno_white_logo.png" alt="TechnoSoftware Logo" class="navbar-logo">
                 </a>
 
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
@@ -145,7 +145,7 @@
                             <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                             <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency
                             </h1>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">At M.S Infotech, we turn your ideas
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">At TechnoSoftware, we turn your ideas
                                 into innovative designs that speak to your audience. Our team combines creativity with
                                 strategy to deliver visually compelling solutions that are both functional and
                                 impactful.</p>
@@ -166,7 +166,7 @@
                             <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You
                                 Really Need!</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">We don’t just design — we communicate.
-                                At M.S Infotech, our team transforms your ideas into bold, strategic visuals that
+                                At TechnoSoftware, our team transforms your ideas into bold, strategic visuals that
                                 engage your audience and elevate your brand.</p>
                             <a href="" class="me-2"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read
@@ -209,7 +209,7 @@
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="counter d-flex flex-column align-items-center">
                         <h1 class="text-primary counter-value mb-2">120</h1>
-                        <h5 class="text-white text-center">Total clients who love M.S Infotech</h5>
+                        <h5 class="text-white text-center">Total clients who love TechnoSoftware</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay=".7s">
@@ -239,16 +239,16 @@
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <h1 class="text-primary">About Us</h1>
-                    <h1 class="mb-4">About M.S Infotech is Empowering your business with stunning visuals and strategic
+                    <h1 class="mb-4">About TechnoSoftware is Empowering your business with stunning visuals and strategic
                         design</h1>
-                    <p>M.S Infotech empowers your business with stunning visuals and strategic design, creating an
+                    <p>TechnoSoftware empowers your business with stunning visuals and strategic design, creating an
                         impactful presence that resonates with your target audience. We believe that great design goes
                         beyond aesthetics—it's a tool for building strong brands and driving business growth.</p>
                     <p class="mb-4">By blending creativity with strategy, we craft custom solutions that not only look
                         beautiful but also align with your business goals. Whether it's designing a memorable logo,
                         building an intuitive website, or creating engaging social media visuals, our work is designed
                         to tell your brand's unique story and deliver results.</p>
-                    <p class="mb-4">At M.S Infotech, we're committed to helping you stand out in a competitive
+                    <p class="mb-4">At TechnoSoftware, we're committed to helping you stand out in a competitive
                         marketplace by providing designs that connect, engage, and inspire action.</p>
                     <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
                 </div>
@@ -395,7 +395,7 @@
                             <div class="project-content">
                                 <a href="#" class="text-center">
                                     <h4 class="text-secondary">Web Development</h4>
-                                    <p class="m-0 text-white">At M.S Infotech, we offer professional web design and
+                                    <p class="m-0 text-white">At TechnoSoftware, we offer professional web design and
                                         development services, crafting responsive, visually engaging websites that
                                         enhance user experience. Our team ensures your site is optimized for
                                         performance, speed, and scalability, helping your business grow online.</p>
@@ -494,7 +494,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 
-                    <p class="mb-4">At M.S Infotech, We are committed to delivering exceptional digital solutions
+                    <p class="mb-4">At TechnoSoftware, We are committed to delivering exceptional digital solutions
                         tailored to your business needs. Our focus is on innovation, quality, and results that drive
                         growth and exceed your expectations.</p>
 
@@ -596,9 +596,9 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h2 class="text-white mb-4">Empowering your business with stunning visuals and strategic design</h2>
-                    <p class="text-white mb-4">M.S Infotech empowers your business with stunning visuals and strategic design, creating an impactful presence that resonates with your target audience. We believe that great design goes beyond aesthetics—it's a tool for building strong brands and driving business growth.</p>
+                    <p class="text-white mb-4">TechnoSoftware empowers your business with stunning visuals and strategic design, creating an impactful presence that resonates with your target audience. We believe that great design goes beyond aesthetics—it's a tool for building strong brands and driving business growth.</p>
                     <p class="text-white mb-4">By blending creativity with strategy, we craft custom solutions that not only look beautiful but also align with your business goals. Whether it's designing a memorable logo, building an intuitive website, or creating engaging social media visuals, our work is designed to tell your brand's unique story and deliver results.</p>
-                    <p class="text-white mb-0">At M.S Infotech, we're committed to helping you stand out in a competitive marketplace by providing designs that connect, engage, and inspire action.</p>
+                    <p class="text-white mb-0">At TechnoSoftware, we're committed to helping you stand out in a competitive marketplace by providing designs that connect, engage, and inspire action.</p>
                 </div>
             </div>
         </div>
@@ -726,7 +726,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0">M.S Infotech helped us revamp our educational portal with stunning UI and a
+                        <p class="mb-0">TechnoSoftware helped us revamp our educational portal with stunning UI and a
                             smooth user experience. Their work was timely, creative, and professional.</p>
                     </div>
                 </div>
@@ -793,7 +793,7 @@
                     </div>
                     <div class="border-top mt-4 pt-3">
                         <p class="mb-0">Their team handled both mobile app UI and backend development seamlessly.
-                            M.S Infotech made the whole process efficient and stress-free.</p>
+                            TechnoSoftware made the whole process efficient and stress-free.</p>
                     </div>
                 </div>
 
@@ -922,7 +922,7 @@
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <h2 class="text-white mb-4">Empowering your business with stunning visuals and strategic
                                     design</h2>
-                                <p class="text-white mb-4">M.S Infotech empowers your business with stunning visuals
+                                <p class="text-white mb-4">TechnoSoftware empowers your business with stunning visuals
                                     and strategic design, creating an impactful presence that resonates with your target
                                     audience. We believe that great design goes beyond aesthetics—it's a tool for
                                     building strong brands and driving business growth.</p>
@@ -931,7 +931,7 @@
                                     Whether it's designing a memorable logo, building an intuitive website, or creating
                                     engaging social media visuals, our work is designed to tell your brand's unique
                                     story and deliver results.</p>
-                                <p class="text-white mb-0">At M.S Infotech, we're committed to helping you stand out
+                                <p class="text-white mb-0">At TechnoSoftware, we're committed to helping you stand out
                                     in a competitive marketplace by providing designs that connect, engage, and inspire
                                     action.</p>
                             </div>
@@ -951,7 +951,7 @@
                     <a href="index.html">
                         <h1 class="text-white fw-bold d-block">M.S<span class="text-secondary">Infotech</span> </h1>
                     </a>
-                    <p class="mt-4 text-light">At M.S Infotech, we're committed to helping you stand out in a
+                    <p class="mt-4 text-light">At TechnoSoftware, we're committed to helping you stand out in a
                         competitive marketplace by providing designs that connect, engage, and inspire action.</p>
                     <div class="d-flex hightech-link">
                         <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
@@ -1011,12 +1011,12 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
                     <span class="text-light"><a href="#" class="text-secondary"><i
-                                class="fas fa-copyright text-secondary me-2"></i>M.S Infotech</a>, All right
+                                class="fas fa-copyright text-secondary me-2"></i>TechnoSoftware</a>, All right
                         reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <!-- <span class="text-light">Designed By <a href="https://htmlcodex.com" class="text-secondary">M.S Infotech</a></span> -->
+                    <!-- <span class="text-light">Designed By <a href="https://htmlcodex.com" class="text-secondary">TechnoSoftware</a></span> -->
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
-# M.S Infotech - HTML Version
+# TechnoSoftware - HTML Version
 
-This is a complete conversion of the M.S Infotech website from React/TypeScript to vanilla HTML, CSS, and JavaScript with Bootstrap 5.
+This is a complete conversion of the TechnoSoftware website from React/TypeScript to vanilla HTML, CSS, and JavaScript with Bootstrap 5.
 
 ## 📁 Project Structure
 
@@ -243,7 +243,7 @@ For support or questions about implementation:
 
 ## 📄 License
 
-This website template is provided for use by M.S Infotech. Modify and use as needed for your business.
+This website template is provided for use by TechnoSoftware. Modify and use as needed for your business.
 
 ## 🎉 Credits
 
