@@ -1338,5 +1338,14 @@
             }, 50);
         }
     </script>
+    
+    <script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (e.ctrlKey && ['u','s','c'].includes(e.key.toLowerCase())) {
+    e.preventDefault();
+  }
+});
+</script>
 </body>
 </html>
