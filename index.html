@@ -874,7 +874,14 @@
             }
         }
 
-        /* Pricing Section */
+        /* ============================= */
+/* Pricing Section Responsive */
+/* ============================= */
+
+.pricing-section {
+    background: var(--dark-bg);
+}
+
 .pricing-card {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(10, 10, 10, 0.7) 100%);
     border: 1px solid rgba(0, 212, 255, 0.15);
@@ -883,6 +890,10 @@
     transition: all 0.4s ease;
     position: relative;
     backdrop-filter: blur(10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pricing-card:hover {
@@ -899,25 +910,35 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* Features List */
 .pricing-features {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
 }
 
 .pricing-features li {
     margin-bottom: 12px;
     color: #b0b0b0;
     font-size: 0.95rem;
+    display: flex;
+    align-items: center;
 }
 
 .pricing-features i {
     margin-right: 8px;
 }
 
+/* Featured Card */
 .featured {
     border: 1px solid var(--cyan);
-    transform: scale(1.05);
+}
+
+/* Remove scale on mobile */
+@media (min-width: 992px) {
+    .featured {
+        transform: scale(1.05);
+    }
 }
 
 .featured-badge {
@@ -931,6 +952,44 @@
     font-weight: 600;
     border-radius: 20px;
 }
+
+/* ============================= */
+/* Mobile Improvements */
+/* ============================= */
+
+@media (max-width: 991px) {
+    .pricing-card {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .pricing-features li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .pricing-section .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .pricing-card {
+        padding: 25px 18px;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+}
+
 
     </style>
 </head>
@@ -1111,7 +1170,8 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-laptop text-cyan"></i>
@@ -1120,7 +1180,8 @@
                         <p>Custom websites built with modern technologies to drive your business growth.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-mobile-alt text-purple"></i>
@@ -1129,7 +1190,8 @@
                         <p>Native and cross-platform mobile applications that engage your users.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-chart-bar text-pink"></i>
@@ -1138,7 +1200,8 @@
                         <p>Strategic marketing campaigns to increase your online visibility and reach.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-mobile-alt text-yellow"></i>
@@ -1147,7 +1210,8 @@
                         <p>Engage with your audience and build brand loyalty through strategic campaigns.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-chart-line text-green"></i>
@@ -1156,7 +1220,8 @@
                         <p>Data-driven SEO strategies to improve visibility and track your growth.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-paint-brush text-blue"></i>
@@ -1185,7 +1250,8 @@
         <div class="row g-4">
 
             <!-- BASIC PACKAGE -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="pricing-card h-100">
                     <h4 class="text-cyan mb-3">Basic</h4>
                     <h5 class="mb-3">Starter Web Application</h5>
@@ -1206,7 +1272,8 @@
             </div>
 
             <!-- STANDARD PACKAGE -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="pricing-card featured h-100">
                     <div class="featured-badge">Most Popular</div>
                     <h4 class="text-purple mb-3">Standard</h4>
@@ -1228,7 +1295,8 @@
             </div>
 
             <!-- PREMIUM PACKAGE -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="pricing-card h-100">
                     <h4 class="text-pink mb-3">Premium</h4>
                     <h5 class="mb-3">Full Stack Web Application + Mobile Solution</h5>
