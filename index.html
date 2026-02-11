@@ -873,6 +873,65 @@
                 display: none !important;
             }
         }
+
+        /* Pricing Section */
+.pricing-card {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(10, 10, 10, 0.7) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 15px;
+    padding: 40px 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cyan);
+    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    margin-bottom: 12px;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.pricing-features i {
+    margin-right: 8px;
+}
+
+.featured {
+    border: 1px solid var(--cyan);
+    transform: scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--cyan);
+    color: #000;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
     </style>
 </head>
 
@@ -1113,6 +1172,86 @@
             </div>
         </div>
     </section>
+
+    <!-- Pricing Section -->
+<section class="pricing-section py-5">
+    <div class="container-fluid">
+        <div class="text-center mb-5">
+            <div class="section-badge">Our Packages</div>
+            <h2 class="section-title">Choose Your Development Plan</h2>
+            <p class="section-subtitle">Flexible pricing tailored to your project requirements</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- BASIC PACKAGE -->
+            <div class="col-md-6 col-lg-4">
+                <div class="pricing-card h-100">
+                    <h4 class="text-cyan mb-3">Basic</h4>
+                    <h5 class="mb-3">Starter Web Application</h5>
+                    <div class="price mb-4">$100</div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-cyan"></i> Up to 5 Pages</li>
+                        <li><i class="fas fa-check text-cyan"></i> Basic Database Setup</li>
+                        <li><i class="fas fa-check text-cyan"></i> Core Functionality</li>
+                        <li><i class="fas fa-check text-cyan"></i> Content Upload</li>
+                        <li><i class="fas fa-check text-cyan"></i> Social Media Icons</li>
+                        <li><i class="fas fa-times text-danger"></i> Payment Integration</li>
+                        <li><i class="fas fa-times text-danger"></i> E-commerce</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-outline-cyan w-100 mt-3">Select Plan</a>
+                </div>
+            </div>
+
+            <!-- STANDARD PACKAGE -->
+            <div class="col-md-6 col-lg-4">
+                <div class="pricing-card featured h-100">
+                    <div class="featured-badge">Most Popular</div>
+                    <h4 class="text-purple mb-3">Standard</h4>
+                    <h5 class="mb-3">Professional Web Application</h5>
+                    <div class="price mb-4">$300</div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-cyan"></i> Up to 10 Pages</li>
+                        <li><i class="fas fa-check text-cyan"></i> Authentication System</li>
+                        <li><i class="fas fa-check text-cyan"></i> Admin Panel</li>
+                        <li><i class="fas fa-check text-cyan"></i> API Integration</li>
+                        <li><i class="fas fa-check text-cyan"></i> Plugins Installation</li>
+                        <li><i class="fas fa-check text-cyan"></i> Opt-in Form</li>
+                        <li><i class="fas fa-times text-danger"></i> Payment Integration</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-cyan w-100 mt-3">Select Plan</a>
+                </div>
+            </div>
+
+            <!-- PREMIUM PACKAGE -->
+            <div class="col-md-6 col-lg-4">
+                <div class="pricing-card h-100">
+                    <h4 class="text-pink mb-3">Premium</h4>
+                    <h5 class="mb-3">Full Stack Web Application + Mobile Solution</h5>
+                    <div class="price mb-4">$700</div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-cyan"></i> Advanced Custom Features</li>
+                        <li><i class="fas fa-check text-cyan"></i> API Development</li>
+                        <li><i class="fas fa-check text-cyan"></i> Payment Integration</li>
+                        <li><i class="fas fa-check text-cyan"></i> E-commerce Functionality</li>
+                        <li><i class="fas fa-check text-cyan"></i> Speed Optimization</li>
+                        <li><i class="fas fa-check text-cyan"></i> Hosting Setup</li>
+                        <li><i class="fas fa-check text-cyan"></i> Autoresponder Integration</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-outline-cyan w-100 mt-3">Select Plan</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!-- CTA Section -->
     <section class="cta-section py-5">
